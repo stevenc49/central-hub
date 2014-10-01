@@ -15,8 +15,9 @@ angular.module('goalsApp')
 
   		var myFirebaseRef = new Firebase('https://resplendent-inferno-1477.firebaseio.com/');
 
-		myFirebaseRef.child('myKey').on('value', function(snapshot) {
-		  console.log(snapshot.val());  // Alerts "San Francisco"
+		myFirebaseRef.child('technicalKnowledge').on('value', function(snapshot) {
+		  console.log(snapshot.val());
+		  $scope.technicalKnowledge = snapshot.val();
 		});
 
   	};

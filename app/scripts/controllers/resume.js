@@ -12,6 +12,13 @@ angular.module('goalsApp')
     
   	$scope.init = function() {
   		console.log('ResumeCtrl initiated');
+
+  		var myFirebaseRef = new Firebase('https://resplendent-inferno-1477.firebaseio.com/');
+
+		myFirebaseRef.child('myKey').on('value', function(snapshot) {
+		  console.log(snapshot.val());  // Alerts "San Francisco"
+		});
+
   	};
 
     $scope.technicalKnowledge = [

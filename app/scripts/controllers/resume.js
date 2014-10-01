@@ -9,7 +9,14 @@
  */
 angular.module('goalsApp')
   .controller('ResumeCtrl', function ($scope) {
+    
+  	$scope.init = function() {
+  		console.log('ResumeCtrl initiated');
+  	};
+
     $scope.technicalKnowledge = [
       'angular'
     ];
+
+    $scope.init();
   });

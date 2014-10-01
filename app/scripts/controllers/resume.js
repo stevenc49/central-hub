@@ -11,7 +11,6 @@ angular.module('goalsApp')
   .controller('ResumeCtrl', function ($scope) {
     
   	$scope.init = function() {
-  		console.log('ResumeCtrl initiated');
 
   		var myFirebaseRef = new Firebase('https://resplendent-inferno-1477.firebaseio.com/');
 
@@ -22,9 +21,12 @@ angular.module('goalsApp')
 
   	};
 
-    $scope.technicalKnowledge = [
-      'angular'
-    ];
-
     $scope.init();
+
+ 	$scope.music = [
+				'Rock',
+				'Metal',
+				'Dubstep',
+				'Electro'
+			];
   });

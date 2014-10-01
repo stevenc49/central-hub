@@ -29,4 +29,6 @@ angular.module('goalsApp')
 				'Dubstep',
 				'Electro'
 			];
+
+	$scope.skillz = ['angular','firebase'];
   });
